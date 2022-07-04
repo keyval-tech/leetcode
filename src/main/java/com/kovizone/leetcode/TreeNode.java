@@ -1,4 +1,4 @@
-package com.kovizone.leetcode.bean;
+package com.kovizone.leetcode;
 
 import lombok.Data;
 

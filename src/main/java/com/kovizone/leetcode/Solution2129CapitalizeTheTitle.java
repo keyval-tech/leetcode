@@ -1,11 +1,11 @@
-package com.kovizone.leetcode.solution;
+package com.kovizone.leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/capitalize-the-title/">2129. 将标题首字母大写</a>
  *
  * @author KV
  */
-public class S2129CapitalizeTheTitle {
+public class Solution2129CapitalizeTheTitle {
     public String capitalizeTitle(String title) {
         StringBuilder stringBuilder = new StringBuilder();
         String[] strs = title.split(" ");
@@ -30,7 +30,7 @@ public class S2129CapitalizeTheTitle {
     }
 
     public static void main(String[] args) {
-        System.out.println(new S2129CapitalizeTheTitle().capitalizeTitle("capiTalIze tHe titLe"));
-        System.out.println(new S2129CapitalizeTheTitle().capitalizeTitle("First leTTeR of EACH Word"));
+        System.out.println(new Solution2129CapitalizeTheTitle().capitalizeTitle("capiTalIze tHe titLe"));
+        System.out.println(new Solution2129CapitalizeTheTitle().capitalizeTitle("First leTTeR of EACH Word"));
     }
 }

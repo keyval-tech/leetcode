@@ -1,11 +1,11 @@
-package com.kovizone.leetcode.solution;
+package com.kovizone.leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/stamping-the-grid/">2132. 用邮票贴满网格图</a>
  *
  * @author other
  */
-public class S2132StampingTheGrid {
+public class Solution2132StampingTheGrid {
     public boolean possibleToStamp(int[][] grid, int stampHeight, int stampWidth) {
         int rowLength = grid.length;
         int colLength = grid[0].length;
@@ -79,7 +79,7 @@ public class S2132StampingTheGrid {
     }
 
     public static void main(String[] args) {
-        new S2132StampingTheGrid().possibleToStamp(
+        new Solution2132StampingTheGrid().possibleToStamp(
                 new int[][]{
                         new int[]{1, 0, 0, 0},
                         new int[]{1, 0, 0, 0},

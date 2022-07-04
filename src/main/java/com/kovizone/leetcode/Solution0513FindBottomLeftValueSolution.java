@@ -1,6 +1,4 @@
-package com.kovizone.leetcode.solution;
-
-import com.kovizone.leetcode.bean.TreeNode;
+package com.kovizone.leetcode;
 
 /**
  * 513
@@ -8,7 +6,7 @@ import com.kovizone.leetcode.bean.TreeNode;
  *
  * @author KV
  */
-public class S0513FindBottomLeftValueSolution {
+public class Solution0513FindBottomLeftValueSolution {
 
     public int findBottomLeftValue(TreeNode root) {
         findBottomLeftValue(root, 1);

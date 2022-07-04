@@ -1,11 +1,11 @@
-package com.kovizone.leetcode.solution;
+package com.kovizone.leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/sum-of-mutated-array-closest-to-target/">1300. 转变数组后最接近目标值的数组和</a>
  *
  * @author KV
  */
-public class S1300SumOfMutatedArrayClosestToTargetSolution {
+public class Solution1300SumOfMutatedArrayClosestToTargetSolution {
 
     public int findBestValue(int[] arr, int target) {
         if (target == 0) {

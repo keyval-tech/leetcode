@@ -1,11 +1,11 @@
-package com.kovizone.leetcode.solution;
+package com.kovizone.leetcode;
 
 /**
  * <a href="https://leetcode.cn/problems/range-sum-query-2d-immutable/">304. 二维区域和检索 - 矩阵不可变</a>
  *
  * @author KV
  */
-public class S0304RangeSumQuery2dImmutable {
+public class Solution0304RangeSumQuery2dImmutable {
     static class NumMatrix {
 
         int[][] sums;

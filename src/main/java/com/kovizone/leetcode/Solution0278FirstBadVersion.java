@@ -1,7 +1,7 @@
 package com.kovizone.leetcode;
 
 /**
- * Solution0278FirstBadVersion
+ * <a href="https://leetcode.cn/problems/first-bad-version/">278. 第一个错误的版本</a>
  *
  * @author KV
  * @since 2022/07/05

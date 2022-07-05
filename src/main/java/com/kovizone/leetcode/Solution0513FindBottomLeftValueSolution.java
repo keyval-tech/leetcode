@@ -1,7 +1,6 @@
 package com.kovizone.leetcode;
 
 /**
- * 513
  * <a href="https://leetcode.cn/problems/find-bottom-left-tree-value/">513. 找树左下角的值</a>
  *
  * @author KV

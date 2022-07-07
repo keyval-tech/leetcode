@@ -16,30 +16,44 @@ public class Solution0189RotateArray {
             int targetIndex = 0;
             int check = 0;
             for (int i = 0; i < l; i++) {
-                targetIndex += k;
-                if (targetIndex >= l) {
-                    targetIndex = targetIndex - l * (targetIndex / l);
-                }
+                targetIndex += k %= l;
                 if (targetIndex == check) {
                     tempIndex++;
                     targetIndex++;
                     check++;
                     continue;
                 }
-                System.out.println("nums: " + JSONUtil.toJsonStr(nums) + ", insert num: \t" + nums[tempIndex] + "\t, insert index: \t" + targetIndex);
                 // 交换元素
                 final int temp = nums[targetIndex];
                 nums[targetIndex] = nums[tempIndex];
                 nums[tempIndex] = temp;
-                System.out.println();
             }
         }
     }
 
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3, 4, 5, 6};
+    public void rotate2(int[] nums, int k) {
+        k %= nums.length;
+        if (k > 0) {
+            reverse(nums, 0, nums.length - 1);
+            reverse(nums, 0, k - 1);
+            reverse(nums, k, nums.length - 1);
+        }
+    }
 
-        new Solution0189RotateArray().rotate(nums, 2);
+    public void reverse(int[] nums, int begin, int end) {
+        while (begin < end) {
+            int t = nums[begin];
+            nums[begin] = nums[end];
+            nums[end] = t;
+            begin++;
+            end--;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{-1};
+
+        new Solution0189RotateArray().rotate2(nums, 2);
         System.out.println(JSONUtil.toJsonStr(nums));
     }
 }

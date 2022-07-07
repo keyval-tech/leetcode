@@ -1,7 +1,5 @@
 package com.kovizone.leetcode;
 
-import cn.hutool.json.JSONUtil;
-
 import java.util.Arrays;
 
 /**
@@ -24,11 +22,13 @@ public class Solution0567PermutationString {
             c2[s2.charAt(i) - 'a']++;
         }
         int right = l1;
-        while (right < s2.length() && !Arrays.equals(c1, c2)) {
-            c2[s2.charAt(right -l1) - 'a']--;
+        boolean result = Arrays.equals(c1, c2);
+        while (right < s2.length() && !result) {
+            c2[s2.charAt(right - l1) - 'a']--;
             c2[s2.charAt(right++) - 'a']++;
+            result = Arrays.equals(c1, c2);
         }
-        return Arrays.equals(c1, c2);
+        return result;
     }
 
     public static void main(String[] args) {

@@ -20,8 +20,8 @@ public class Solution0733FloodFill {
         if (sr >= 0 && sr < image.length && sc >= 0 && sc < image[0].length && image[sr][sc] == sourceColor) {
             image[sr][sc] = newColor;
             floodFill(image, sr - 1, sc, sourceColor, newColor);
-            floodFill(image, sr, sc - 1, sourceColor, newColor);
             floodFill(image, sr + 1, sc, sourceColor, newColor);
+            floodFill(image, sr, sc - 1, sourceColor, newColor);
             floodFill(image, sr, sc + 1, sourceColor, newColor);
         }
     }

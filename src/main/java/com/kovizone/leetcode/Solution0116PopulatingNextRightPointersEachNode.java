@@ -16,21 +16,15 @@ public class Solution0116PopulatingNextRightPointersEachNode {
 
     public void dis(Node node) {
         if (node != null) {
-            if (node.left != null && node.right != null) {
-                link(node.left, node.right);
-            }
+            link(node.left, node.right);
             dis(node.left);
             dis(node.right);
         }
     }
 
     public void link(Node node1, Node node2) {
-        if (node1 == null) {
-            return;
-        }
-        node1.next = node2;
-        System.out.println(node1 + " -> " + node2);
-        if (node1.right != null && node2 != null) {
+        if (node1 != null && node2 != null) {
+            node1.next = node2;
             link(node1.right, node2.left);
         }
     }

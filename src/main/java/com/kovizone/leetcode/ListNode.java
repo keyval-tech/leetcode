@@ -36,6 +36,17 @@ public class ListNode {
         this.next = next;
     }
 
+    ListNode(int... valArr) {
+        this(valArr[0]);
+        if (valArr.length > 1) {
+            ListNode p = this;
+            for (int i = 1; i < valArr.length; i++) {
+                p.next = new ListNode(valArr[i]);
+                p = p.next;
+            }
+        }
+    }
+
     @Override
     public String toString() {
         return "[" + val + "]" + (next == null ? "" : "->" + next.toString());

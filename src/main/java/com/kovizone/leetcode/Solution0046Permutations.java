@@ -11,8 +11,6 @@ import java.util.List;
  */
 public class Solution0046Permutations {
 
-    static int NUM = 0;
-
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> nodeList = new ArrayList<>();
         permute(nodeList, new ArrayList<>(), nums);

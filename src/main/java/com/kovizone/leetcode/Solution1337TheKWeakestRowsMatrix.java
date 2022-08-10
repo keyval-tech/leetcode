@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Solution1337TheKWeakestRowsMatrix {
     public int[] kWeakestRows(int[][] mat, int k) {
+        // TODO 待优化
         List<int[]> list = new ArrayList<>();
         for (int i = 0; i < mat.length; i++) {
             int[] nums = mat[i];

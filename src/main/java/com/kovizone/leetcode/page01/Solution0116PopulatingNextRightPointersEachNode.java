@@ -5,9 +5,10 @@ import com.kovizone.leetcode.core.Node;
 import java.util.List;
 
 /**
- * Solution0116PopulatingNextRightPointersEachNode
+ * <a href="https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/">116. 填充每个节点的下一个右侧节点指针</a>
  *
  * @author KV
+ * @see Solution0117PopulatingNextRightPointersEachNode2
  * @since 2022/07/12
  */
 public class Solution0116PopulatingNextRightPointersEachNode {

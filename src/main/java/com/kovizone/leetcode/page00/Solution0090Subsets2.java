@@ -1,21 +1,19 @@
 package com.kovizone.leetcode.page00;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
- * <a href="https://leetcode.cn/problems/subsets/">78. 子集</a>
+ * <a href="https://leetcode.cn/problems/subsets-ii/">90. 子集 II</a>
  *
  * @author KV
+ * @see Solution0078Subsets
  * @since 2022/08/24
  */
-public class Solution0078Subsets {
+public class Solution0090Subsets2 {
 
-    public static void main(String[] args) {
-        System.out.println(new Solution0078Subsets().subsets(new int[]{1, 2, 3}));
-    }
-
-    public List<List<Integer>> subsets(int[] nums) {
+    public List<List<Integer>> subsetsWithDup2(int[] nums) {
+        // TODO 待改进
+        Arrays.sort(nums);
         List<Integer> t = new ArrayList<>();
         List<List<Integer>> ans = new ArrayList<>();
 
@@ -38,38 +36,34 @@ public class Solution0078Subsets {
         return ans;
     }
 
-    public List<List<Integer>> subsets2(int[] nums) {
-        List<List<Integer>> ans = new ArrayList<>();
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        Arrays.sort(nums);
+        Set<List<Integer>> ans = new HashSet<>();
         ans.add(new ArrayList<>());
         for (int i = 0; i < nums.length; i++) {
-            subsets(ans, nums, i, new ArrayList<>());
+            subsetsWithDup(ans, nums, i, new ArrayList<>());
         }
-        return ans;
+        return new ArrayList<>(ans);
     }
 
-    public void subsets(List<List<Integer>> ans, final int[] nums, int p, List<Integer> prefix) {
-        List<Integer> list = new ArrayList<>(prefix);
+    public void subsetsWithDup(Set<List<Integer>> ans, final int[] nums, int p, List<Integer> prefixIndex) {
+        List<Integer> list = new ArrayList<>();
+        for (Integer index : prefixIndex) {
+            list.add(nums[index]);
+        }
         list.add(nums[p]);
         ans.add(list);
+
+        List<Integer> nextPrefixIndex = new ArrayList<>(prefixIndex);
+        nextPrefixIndex.add(p);
         if (nums.length - p > 1) {
             for (int i = p + 1; i < nums.length; i++) {
-                subsets(ans, nums, i, list);
+                subsetsWithDup(ans, nums, i, nextPrefixIndex);
             }
         }
     }
 
-    // 1
-    // 1 2
-    // 1 2 3
-    // 1 2 4
-    // 1 3
-    // 1 3 4
-    // 1 4
-    // 2
-    // 2 3
-    // 2 3 4
-    // 2 4
-    // 3
-    // 3 4
-    // 4
+    public static void main(String[] args) {
+        System.out.println(new Solution0090Subsets2().subsetsWithDup(new int[]{4, 4, 4, 1, 4}));
+    }
 }

@@ -17,7 +17,7 @@ public class Solution0046Permutations {
         return nodeList;
     }
 
-    public void permute(List<List<Integer>> nodeList, List<Integer> prefix, int[] nums) {
+    public void permute(List<List<Integer>> nodeList, List<Integer> prefix, final int[] nums) {
         if (nums.length == prefix.size()) {
             nodeList.add(prefix);
         } else {

@@ -1,14 +1,14 @@
 package com.kovizone.leetcode.core;
 
-import com.kovizone.leetcode.page00.Solution0019RemoveNthNodeFromEndList;
-import com.kovizone.leetcode.page08.Solution0876MiddleLinkedList;
+import com.kovizone.leetcode.page00.Solution0019;
+import com.kovizone.leetcode.page08.Solution0876;
 
 /**
  * ListNode
  *
  * @author KV
- * @see Solution0876MiddleLinkedList
- * @see Solution0019RemoveNthNodeFromEndList
+ * @see Solution0876
+ * @see Solution0019
  * @since 2022/07/07
  */
 public class ListNode {

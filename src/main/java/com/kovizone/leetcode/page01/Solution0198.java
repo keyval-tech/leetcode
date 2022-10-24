@@ -19,8 +19,9 @@ public class Solution0198 {
         int l1 = nums[0];
         int l2 = Math.max(l1, nums[1]);
         for (int i = 2; i < nums.length; i++) {
+            int num = nums[i];
             int temp = l2;
-            l2 = Math.max(l1 + nums[i], l2);
+            l2 = Math.max(l1 + num, l2);
             l1 = temp;
         }
         return l2;

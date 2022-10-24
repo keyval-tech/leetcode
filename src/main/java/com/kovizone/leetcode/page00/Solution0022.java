@@ -1,11 +1,10 @@
 package com.kovizone.leetcode.page00;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
- * Solution0022
+ * <a href="https://leetcode.cn/problems/generate-parentheses/">22. 括号生成</a>
  *
  * @author KV
  * @since 2022/10/24

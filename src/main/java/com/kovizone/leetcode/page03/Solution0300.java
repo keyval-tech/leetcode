@@ -1,20 +1,31 @@
 package com.kovizone.leetcode.page03;
 
 import cn.hutool.core.util.ArrayUtil;
+import cn.hutool.core.util.RandomUtil;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="https://leetcode.cn/problems/longest-increasing-subsequence">300. 最长递增子序列</a>
+ * <p>
+ * 进阶：{@link com.kovizone.leetcode.page06.Solution0673}
  *
  * @author KV
  * @since 2022/12/29
  */
 public class Solution0300 {
-    public int lengthOfLIS(int[] nums) {
+    public int lengthOfLts(int[] nums) {
         int[] tails = new int[nums.length];
         int res = 0;
+        List<Integer> temp = new ArrayList<>();
         for (int num : nums) {
-            System.out.println(ArrayUtil.toString(tails) + ", res: " + res);
+            temp.add(num);
+            System.out.println();
+            System.out.println(temp);
+            System.out.println(ArrayUtil.toString(tails));
             int l = 0, r = res;
+            // 检查tail中是第一个大于num的数，如果存在，替换它下标前一位的值，否则加到tail有效值的后一位
             while (l < r) {
                 int m = (l + r) / 2;
                 if (tails[m] < num) {
@@ -27,12 +38,12 @@ public class Solution0300 {
             if (res == r) {
                 res++;
             }
+            System.out.println(ArrayUtil.toString(tails));
         }
-        System.out.println(ArrayUtil.toString(tails) + ", res: " + res);
         return res;
     }
 
-    public int lengthOfLIS2(int[] nums) {
+    public int lengthOfLts2(int[] nums) {
 
         System.out.println("nums: " + ArrayUtil.toString(nums));
 
@@ -72,7 +83,7 @@ public class Solution0300 {
         return len;
     }
 
-    public int lengthOfLIS1(int[] nums) {
+    public int lengthOfLts1(int[] nums) {
         int n = nums.length;
         int[] dp = new int[n];
         int max = 0;
@@ -94,6 +105,16 @@ public class Solution0300 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution0300().lengthOfLIS(new int[]{9, 8, 2, 5, 3, 7, 8, 6, 4, 2, 1, 5, 8, 7, 6, 5, 9, 5, 6, 8, 9}));
+        int[] intArr = new int[]{6, 4, 7, 0, 15, 1, 19, 3, 12, 9, 19, 9, 11, 11, 14, 16, 4, 8, 6, 18,17};
+        System.out.println(new Solution0300().lengthOfLts(intArr));
+    }
+
+    public static void main1(String[] args) {
+        for (int i = 0; i < 20; i++) {
+            if (i > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(RandomUtil.randomInt(0, 20));
+        }
     }
 }

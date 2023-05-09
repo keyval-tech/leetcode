@@ -1,7 +1,7 @@
 package com.kovizone.leetcode.core;
 
-import com.kovizone.leetcode.page00.Solution0019;
-import com.kovizone.leetcode.page08.Solution0876;
+import com.kovizone.leetcode.solution.Solution0019;
+import com.kovizone.leetcode.solution.Solution0876;
 
 /**
  * ListNode

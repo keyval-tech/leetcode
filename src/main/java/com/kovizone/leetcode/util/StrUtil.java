@@ -1,4 +1,4 @@
-package com.kovizone.util;
+package com.kovizone.leetcode.util;
 
 /**
  * StrUtil

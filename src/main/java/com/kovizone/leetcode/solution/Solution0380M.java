@@ -1,6 +1,8 @@
 package com.kovizone.leetcode.solution;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 /**
  * <a href="https://leetcode.cn/problems/insert-delete-getrandom-o1/">380. O(1) 时间插入、删除和获取随机元素</a>
@@ -26,23 +28,26 @@ public interface Solution0380M {
 
     class RandomizedSet {
 
-        List<Integer> nums;
+        int[] nums;
         Map<Integer, Integer> indexMap;
         Random random;
+        int lastIndex;
 
         public RandomizedSet() {
-            nums = new ArrayList<>();
+            nums = new int[200001];
             indexMap = new HashMap<>();
             random = new Random();
+            lastIndex = -1;
         }
 
         public boolean insert(int val) {
-            if (nums.contains(val)) {
+            Integer index = indexMap.get(val);
+            if (index != null) {
                 return false;
             }
-            int newIndex = nums.size();
-            nums.add(val);
-            indexMap.put(val, newIndex);
+            lastIndex++;
+            nums[lastIndex] = val;
+            indexMap.put(val, lastIndex);
             return true;
         }
 
@@ -52,24 +57,21 @@ public interface Solution0380M {
                 return false;
             }
             // 要删除的元素，是list的最后一个时
-            int lastIndex = nums.size() - 1;
-            if (index == lastIndex) {
-                nums.remove(lastIndex);
-                indexMap.remove(val);
+            int lastVal = nums[lastIndex];
+            lastIndex--;
+            indexMap.remove(val);
+            if (val == lastVal) {
                 return true;
             }
 
             // 最后一个元素与其交换
-            int lastVal = nums.get(lastIndex);
-            nums.remove(lastIndex);
-            nums.set(index, lastVal);
-            indexMap.remove(val);
+            nums[index] = lastVal;
             indexMap.put(lastVal, index);
             return true;
         }
 
         public int getRandom() {
-            return nums.get(random.nextInt(nums.size()));
+            return nums[random.nextInt(lastIndex + 1)];
         }
     }
 }

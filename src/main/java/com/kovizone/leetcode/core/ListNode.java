@@ -1,6 +1,6 @@
 package com.kovizone.leetcode.core;
 
-import com.kovizone.leetcode.solution.Solution0019;
+import com.kovizone.leetcode.solution.Solution0019M;
 import com.kovizone.leetcode.solution.Solution0876;
 
 /**
@@ -8,7 +8,7 @@ import com.kovizone.leetcode.solution.Solution0876;
  *
  * @author KV
  * @see Solution0876
- * @see Solution0019
+ * @see Solution0019M
  * @since 2022/07/07
  */
 public class ListNode {

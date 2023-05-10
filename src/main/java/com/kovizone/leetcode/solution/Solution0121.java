@@ -2,6 +2,8 @@ package com.kovizone.leetcode.solution;
 
 /**
  * <a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/">121. 买卖股票的最佳时机</a>
+ * <p>
+ * 122. 买卖股票的最佳时机 II{@link Solution0122}
  *
  * @author KV
  * @since 2023/05/09

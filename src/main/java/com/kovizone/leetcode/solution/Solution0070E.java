@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * <a href="https://leetcode.cn/problems/climbing-stairs/">70. 爬楼梯</a>
  * <p>
- * #记忆化搜索 #数学 #动态规划
+ * #记忆化搜索 #数学 #动态规划 #简单
  *
  * @author KV
  * @since 2022/08/02

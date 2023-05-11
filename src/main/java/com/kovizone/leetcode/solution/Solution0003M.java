@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * <a href="https://leetcode.cn/problems/longest-substring-without-repeating-characters/">3. 无重复字符的最长子串</a>
  * <p>
- * #哈希表 #字符串 #滑动窗口
+ * #哈希表 #字符串 #滑动窗口 #中等
  *
  * @author KV
  * @since 2022/07/07

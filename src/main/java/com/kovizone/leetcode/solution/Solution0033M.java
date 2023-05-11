@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/search-in-rotated-sorted-array/">33. 搜索旋转排序数组</a>
  * <p>
- * #数组 #二分查找
+ * #数组 #二分查找 #中等
  *
  * @author KV
  * @since 2022/08/10

@@ -5,7 +5,7 @@ import cn.hutool.core.util.ArrayUtil;
 /**
  * <a href="https://leetcode.cn/problems/merge-sorted-array/">88. 合并两个有序数组</a>
  *
- * #数组 #双指针 #排序
+ * #数组 #双指针 #排序 #简单
  *
  * @author KV
  * @since 2023/02/03

@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">4. 寻找两个正序数组的中位数</a>
  * <p>
- * #数组 #二分查找 #分治
+ * #数组 #二分查找 #分治 #困难
  *
  * @author KV
  * @since 2023/02/03

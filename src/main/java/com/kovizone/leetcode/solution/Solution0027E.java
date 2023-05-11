@@ -5,7 +5,7 @@ import cn.hutool.core.util.ArrayUtil;
 /**
  * <a href="https://leetcode.cn/problems/remove-element/?envType=study-plan-v2">27. 移除元素</a>
  * <p>
- * #数组 #双指针
+ * #数组 #双指针 #简单
  *
  * @author KV
  * @since 2023/05/08

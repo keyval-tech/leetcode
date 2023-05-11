@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/sqrtx/">69. x 的平方根 </a>
  * <p>
- * #数学 #二分查找
+ * #数学 #二分查找 #简单
  *
  * @author KV
  * @since 2022/08/08

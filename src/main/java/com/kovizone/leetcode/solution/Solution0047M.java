@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * <a href="https://leetcode.cn/problems/permutations-ii/">47. 全排列 II</a>
  * <p>
- * #数组 #回溯
+ * #数组 #回溯 #中等
  *
  * @author KV
  * @see Solution0046M

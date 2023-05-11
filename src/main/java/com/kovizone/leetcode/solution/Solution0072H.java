@@ -3,9 +3,9 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/edit-distance/">72. 编辑距离</a>
  * <p>
- * 相似：{@link Solution0538}
+ * 相似：{@link Solution0538M}
  * <p>
- * #字符串 #动态规划
+ * #字符串 #动态规划 #困难
  *
  * @author KV
  * @since 2023/02/03

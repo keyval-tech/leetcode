@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/search-insert-position/">35. 搜索插入位置</a>
  * <p>
- * #数组 #二分查找
+ * #数组 #二分查找 #简单
  *
  * @author KV
  * @since 2022/07/05

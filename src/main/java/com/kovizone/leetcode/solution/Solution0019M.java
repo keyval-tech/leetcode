@@ -5,7 +5,7 @@ import com.kovizone.leetcode.core.ListNode;
 /**
  * <a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a>
  * <p>
- * #链表 #双指针
+ * #链表 #双指针 #中等
  *
  * @author KV
  * @see ListNode

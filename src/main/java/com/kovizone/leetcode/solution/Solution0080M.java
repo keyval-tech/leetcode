@@ -5,7 +5,7 @@ import cn.hutool.core.util.ArrayUtil;
 /**
  * <a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/">80. 删除有序数组中的重复项 II</a>
  * <p>
- * #数组 #双指针
+ * #数组 #双指针 #中等
  *
  * @author KV
  * @since 2023/05/08

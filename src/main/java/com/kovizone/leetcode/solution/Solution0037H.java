@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/sudoku-solver/">37. 解数独</a>
  * <p>
- * #数组 #哈希表 #回溯 #矩阵
+ * #数组 #哈希表 #回溯 #矩阵 #困难
  *
  * @author KV
  * @since 2023/02/03

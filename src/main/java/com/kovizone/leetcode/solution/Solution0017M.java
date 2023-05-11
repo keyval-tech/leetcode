@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * <a href="https://leetcode.cn/problems/letter-combinations-of-a-phone-number/">17. 电话号码的字母组合</a>
  * <p>
- * #哈希表 #字符串 #回溯
+ * #哈希表 #字符串 #回溯 #中等
  *
  * @author KV
  * @since 2022/10/20

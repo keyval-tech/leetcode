@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * <a href="https://leetcode.cn/problems/3sum/">15. 三数之和</a>
  * <p>
- * #数组 #双指针 #排序
+ * #数组 #双指针 #排序 #中等
  *
  * @author KV
  * @since 2022/08/10

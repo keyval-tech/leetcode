@@ -1,13 +1,13 @@
 package com.kovizone.leetcode.core;
 
 import com.kovizone.leetcode.solution.Solution0019M;
-import com.kovizone.leetcode.solution.Solution0876;
+import com.kovizone.leetcode.solution.Solution0876E;
 
 /**
  * ListNode
  *
  * @author KV
- * @see Solution0876
+ * @see Solution0876E
  * @see Solution0019M
  * @since 2022/07/07
  */

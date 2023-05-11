@@ -7,9 +7,7 @@ import java.util.Random;
 /**
  * <a href="https://leetcode.cn/problems/insert-delete-getrandom-o1/">380. O(1) 时间插入、删除和获取随机元素</a>
  * <p>
- * 难度：中等
- * <p>
- * #设计 #数组 #哈希表 #数学 #随机化
+ * #设计 #数组 #哈希表 #数学 #随机化 #中等
  *
  * @author KV
  * @since 2023/05/10

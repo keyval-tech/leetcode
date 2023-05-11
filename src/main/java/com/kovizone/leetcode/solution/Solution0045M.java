@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/jump-game-ii/">45. 跳跃游戏 II</a>
  * <p>
- * #贪心 #数组 #动态规划
+ * #贪心 #数组 #动态规划 #中等
  *
  * @author KV
  * @see Solution0055M

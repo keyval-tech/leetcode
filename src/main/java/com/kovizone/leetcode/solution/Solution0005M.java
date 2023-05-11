@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/longest-palindromic-substring/">5. 最长回文子串</a>
  * <p>
- * #字符串 #动态规划
+ * #字符串 #动态规划 #中等
  *
  * @author KV
  * @since 2022/10/25

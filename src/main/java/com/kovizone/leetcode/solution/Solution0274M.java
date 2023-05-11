@@ -3,9 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/h-index/?envType=study-plan-v2">274. H 指数</a>
  * <p>
- * 难度：中等
- * <p>
- * #数组 #计数排序 #排序
+ * #数组 #计数排序 #排序 #中等
  *
  * @author KV
  * @since 2023/05/10

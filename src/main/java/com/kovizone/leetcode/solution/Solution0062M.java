@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/unique-paths/">62. 不同路径</a>
  * <p>
- * #数学 #动态规划 #组合数学
+ * #数学 #动态规划 #组合数学 #中等
  *
  * @author KV
  * @since 2022/10/24

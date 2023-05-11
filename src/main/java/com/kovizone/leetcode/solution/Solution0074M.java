@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/search-a-2d-matrix/">74. 搜索二维矩阵</a>
  * <p>
- * #数组 #二分查找 #矩阵
+ * #数组 #二分查找 #矩阵 #中等
  *
  * @author KV
  * @since 2022/08/09

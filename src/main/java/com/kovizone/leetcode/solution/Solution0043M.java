@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/multiply-strings/">43. 字符串相乘</a>
  * <p>
- * #数学 #字符串 #模拟
+ * #数学 #字符串 #模拟 #中等
  *
  * @author KV
  * @since 2023/02/03

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * <a href="https://leetcode.cn/problems/generate-parentheses/">22. 括号生成</a>
  * <p>
- * #字符串 #动态规划 #回溯
+ * #字符串 #动态规划 #回溯 #中等
  *
  * @author KV
  * @since 2022/10/24

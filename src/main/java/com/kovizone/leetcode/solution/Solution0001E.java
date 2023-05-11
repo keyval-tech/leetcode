@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * <a href="https://leetcode.cn/problems/two-sum/">1. 两数之和</a>
  * <p>
- * #数组 #哈希表
+ * #数组 #哈希表 #简单
  *
  * @author KV
  * @since 2022/07/04

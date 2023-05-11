@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * <a href="https://leetcode.cn/problems/permutations/">46. 全排列</a>
  * <p>
- * #数组 #回溯
+ * #数组 #回溯 #中等
  *
  * @author KV
  * @since 2022/07/29

@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/container-with-most-water/">11. 盛最多水的容器</a>
  * <p>
- * #贪心 #数组 #双指针
+ * #贪心 #数组 #双指针 #中等
  *
  * @author KV
  * @since 2022/08/11

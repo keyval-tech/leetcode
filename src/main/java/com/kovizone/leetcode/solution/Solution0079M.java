@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/word-search/">79. 单词搜索</a>
  *
- * #数组 #回溯 #矩阵
+ * #数组 #回溯 #矩阵 #中等
  *
  * @author KV
  * @since 2022/10/24

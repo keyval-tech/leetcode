@@ -5,7 +5,7 @@ import com.kovizone.leetcode.core.ListNode;
 /**
  * <a href="https://leetcode.cn/problems/merge-two-sorted-lists/">21. 合并两个有序链表</a>
  * <p>
- * #递归 #链表
+ * #递归 #链表 #简单
  *
  * @author KV
  * @since 2022/07/13

@@ -5,7 +5,7 @@ import com.kovizone.leetcode.core.ListNode;
 /**
  * <a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/">82. 删除排序链表中的重复元素 II</a>
  *
- * #链表 #双指针
+ * #链表 #双指针 #中等
  *
  * @author KV
  * @since 2022/08/10

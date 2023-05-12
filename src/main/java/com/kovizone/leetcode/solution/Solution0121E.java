@@ -5,7 +5,7 @@ package com.kovizone.leetcode.solution;
  * <p>
  * 122. 买卖股票的最佳时机 II{@link Solution0122M}
  *
- * #数组 #动态规划 #简单
+ * #数组 #动态规划 #简单 #面试经典150题
  *
  * @author KV
  * @since 2023/05/09

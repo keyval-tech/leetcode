@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 /**
  * <a href="https://leetcode.cn/problems/gas-station/">134. 加油站</a>
  * <p>
- * #贪心 #数组 #中等
+ * #贪心 #数组 #中等 #面试经典150题
  *
  * @author KV
  * @since 2023/05/11

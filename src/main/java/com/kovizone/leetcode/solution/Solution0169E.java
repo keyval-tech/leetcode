@@ -3,7 +3,7 @@ package com.kovizone.leetcode.solution;
 /**
  * <a href="https://leetcode.cn/problems/majority-element/">169. 多数元素</a>
  * <p>
- * #数组 #哈希表 #分治 #计数 #排序
+ * #数组 #哈希表 #分治 #计数 #排序 #简单 #面试经典150题
  *
  * @author KV
  * @since 2023/05/09

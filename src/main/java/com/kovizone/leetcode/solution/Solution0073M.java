@@ -15,16 +15,15 @@ import java.util.Arrays;
 public class Solution0073M {
     public void setZeroes(int[][] matrix) {
 
+        // 检查第一行或第一列是否需要设置为0
         boolean firstRowSetZeroes = false;
         boolean firstCellSetZeroes = false;
-
-        for (int i = 0; i < matrix[0].length; i++) {
-            if (matrix[0][i] == 0) {
+        for (int y = 0; y < matrix[0].length; y++) {
+            if (matrix[0][y] == 0) {
                 firstRowSetZeroes = true;
                 break;
             }
         }
-
         for (int[] line : matrix) {
             if (line[0] == 0) {
                 firstCellSetZeroes = true;
@@ -32,6 +31,7 @@ public class Solution0073M {
             }
         }
 
+        // 第二行第二列开始遍历，需要设置为0的行或列在第一行和第一列进行标记
         for (int x = 1; x < matrix.length; x++) {
             for (int y = 1; y < matrix[x].length; y++) {
                 if (matrix[x][y] == 0) {
@@ -41,6 +41,7 @@ public class Solution0073M {
             }
         }
 
+        // 第二行第二列开始遍历，根据第一行或第一列的标记设置0
         for (int x = 1; x < matrix.length; x++) {
             for (int y = 1; y < matrix[x].length; y++) {
                 if (matrix[x][0] == 0 || matrix[0][y] == 0) {
@@ -49,6 +50,7 @@ public class Solution0073M {
             }
         }
 
+        // 第一行或第一列是否需要设置为0
         if (firstRowSetZeroes) {
             Arrays.fill(matrix[0], 0);
         }

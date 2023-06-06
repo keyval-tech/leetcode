@@ -12,6 +12,14 @@ import com.kovizone.leetcode.core.TreeNode;
  */
 public class Solution0226E {
     public TreeNode invertTree(TreeNode root) {
-        return null;
+        if (root == null) {
+            return null;
+        }
+        invertTree(root.left);
+        invertTree(root.right);
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        return root;
     }
 }

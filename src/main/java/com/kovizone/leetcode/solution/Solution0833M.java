@@ -1,5 +1,8 @@
 package com.kovizone.leetcode.solution;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * <a href="https://leetcode.cn/problems/find-and-replace-in-string/">833. 字符串中的查找与替换</a>
  * <p>
@@ -10,39 +13,24 @@ package com.kovizone.leetcode.solution;
  */
 public class Solution0833M {
     public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < indices.length; i++) {
+            if (!map.containsKey(indices[i]) && s.startsWith(sources[i], indices[i])) {
+                map.put(indices[i], i);
+            }
+        }
+        if (map.isEmpty()) {
+            return s;
+        }
         StringBuilder result = new StringBuilder();
-        char[] chars = s.toCharArray();
         int i = 0;
-
-        while (i < chars.length) {
-            int p = -1;
-            for (int j = 0; j < indices.length; j++) {
-                if (i == indices[j]) {
-                    p = j;
-                    break;
-                }
-            }
-            if (p == -1) {
-                result.append(chars[i]);
-                i++;
-                continue;
-            }
-
-            boolean check = (i + sources[p].length()) <= chars.length;
-            if (check) {
-                for (int k = 0; k < sources[p].length(); k++) {
-                    if (chars[i + k] != sources[p].charAt(k)) {
-                        check = false;
-                        break;
-                    }
-                }
-            }
-
-            if (check) {
-                result.append(targets[p]);
-                i += sources[p].length();
+        while (i < s.length()) {
+            Integer j = map.get(i);
+            if (j != null) {
+                result.append(targets[j]);
+                i += sources[j].length();
             } else {
-                result.append(chars[i]);
+                result.append(s.charAt(i));
                 i++;
             }
         }
